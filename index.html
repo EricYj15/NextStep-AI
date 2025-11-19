@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextStep AI · MVP</title>
+    <!-- Google Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIu60xCwR8DT6n8ckwXdxFp6Metf7CUs3r3G5GkW3v4Yg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <!-- Sidebar fixo com navegação principal -->
+      <aside class="sidebar">
+        <div class="brand">
+          <i class="fa-solid fa-shapes"></i>
+          <span>NextStep AI</span>
+        </div>
+        <button class="sidebar-toggle" aria-label="Alternar menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav">
+          <ul>
+            <li class="nav-item active" data-target="dashboard">
+              <i class="fa-solid fa-house"></i>
+              <span>Dashboard</span>
+            </li>
+            <li class="nav-item" data-target="trilha">
+              <i class="fa-solid fa-route"></i>
+              <span>Trilha</span>
+            </li>
+            <li class="nav-item" data-target="player">
+              <i class="fa-solid fa-play"></i>
+              <span>Player</span>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar-footer">
+          <p>Pronto para sua próxima etapa.</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <!-- Seção 1: Dashboard -->
+        <section id="dashboard" class="content-section active">
+          <header class="section-header">
+            <div>
+              <p class="eyebrow">Olá, Lucas!</p>
+              <h1>Sua Jornada de Requalificação</h1>
+            </div>
+            <div class="profile-chip">
+              <i class="fa-solid fa-user"></i>
+              <span>Lucas Andrade</span>
+            </div>
+          </header>
+
+          <div class="dashboard-grid">
+            <div class="progress-card">
+              <div class="progress-visual">
+                <div class="progress-circle">
+                  <span>45%</span>
+                </div>
+                <p>Progresso da Trilha</p>
+              </div>
+              <div class="progress-visual">
+                <div class="progress-circle secondary">
+                  <span>70%</span>
+                </div>
+                <p>Nível de Empregabilidade</p>
+              </div>
+            </div>
+
+            <div class="next-steps">
+              <h2>Próximos Passos</h2>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" />
+                    Módulo 3: Introdução ao Python
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" />
+                    Entregar exercício sobre SQL
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" />
+                    Participar do Q&A ao vivo (quinta-feira)
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course-suggestions">
+              <h2>Cursos Sugeridos (Próximas Etapas)</h2>
+              <div class="course-card-grid">
+                <article class="course-card">
+                  <h3>Data Storytelling</h3>
+                  <p>Aprenda a comunicar insights com clareza e impacto.</p>
+                  <button>Iniciar</button>
+                </article>
+                <article class="course-card">
+                  <h3>SQL para Analytics</h3>
+                  <p>Pratique queries avançadas para dashboards.</p>
+                  <button>Iniciar</button>
+                </article>
+                <article class="course-card">
+                  <h3>Projetos com Python</h3>
+                  <p>Construa um portfólio aplicando ciência de dados.</p>
+                  <button>Iniciar</button>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção 2: Trilha de Aprendizado -->
+        <section id="trilha" class="content-section">
+          <header class="section-header">
+            <div>
+              <p class="eyebrow">Olá, Lucas!</p>
+              <h1>Sua Trilha Personalizada: Analista de Dados Júnior</h1>
+            </div>
+            <div class="profile-chip">
+              <i class="fa-solid fa-user-graduate"></i>
+              <span>Turma Abril · 2025</span>
+            </div>
+          </header>
+
+          <div class="learning-path">
+            <div class="module completed">
+              <span>Módulo 1</span>
+              <strong>Lógica de Programação</strong>
+            </div>
+            <span class="path-connector"><i class="fa-solid fa-angles-right"></i></span>
+            <div class="module completed">
+              <span>Módulo 2</span>
+              <strong>Fundamentos de Dados</strong>
+            </div>
+            <span class="path-connector"><i class="fa-solid fa-angles-right"></i></span>
+            <div class="module active">
+              <span>Módulo 3</span>
+              <strong>SQL Essencial</strong>
+            </div>
+            <span class="path-connector"><i class="fa-solid fa-angles-right"></i></span>
+            <div class="module">
+              <span>Módulo 4</span>
+              <strong>Dashboards Interativos</strong>
+            </div>
+          </div>
+
+          <div class="module-details">
+            <h2>Módulo Ativo: Módulo 3 - SQL Essencial</h2>
+            <div class="detail-card">
+              <h3>Objetivo do Módulo</h3>
+              <p>
+                Dominar consultas SQL para extrair, transformar e analisar dados em
+                ambientes corporativos. Foque em joins complexos e otimização.
+              </p>
+              <button class="primary">Continuar Aula</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção 3: Player de Aula -->
+        <section id="player" class="content-section">
+          <header class="section-header">
+            <div>
+              <p class="eyebrow">Olá, Lucas!</p>
+              <h1>Aula 1: Introdução ao Python</h1>
+            </div>
+            <div class="profile-chip">
+              <i class="fa-solid fa-clock"></i>
+              <span>45 min restantes</span>
+            </div>
+          </header>
+
+          <div class="player-layout">
+            <div class="video-panel">
+              <div class="video-placeholder">
+                <img
+                  src="player-preview.jpg"
+                  alt="Tela do player NextStep AI"
+                />
+              </div>
+              <div class="video-controls">
+                <button aria-label="Play/Pause">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <button aria-label="Volume">
+                  <i class="fa-solid fa-volume-high"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="lesson-panel">
+              <h2>Resumo da Aula / Exercício</h2>
+              <p>
+                Revise os conceitos básicos de Python e escreva um script simples que
+                solicita o nome do usuário e imprime uma mensagem personalizada.
+              </p>
+              <label for="exercise">Sua resposta</label>
+              <textarea
+                id="exercise"
+                rows="5"
+                placeholder="Digite sua solução ou principais insights aqui..."
+              ></textarea>
+              <button class="secondary" id="next-class-btn">Próxima Aula</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
