@@ -28,10 +28,9 @@ Abra `http://localhost:8000` e navegue pelo MVP.
 
 ## Deploy na Vercel
 1. Faça login na Vercel e importe o repositório GitHub que contém estes arquivos.
-2. Como o projeto é estático, não há comandos de build; a Vercel lerá `vercel.json` e publicará `index.html` automaticamente.
-3. Confirme que o diretório raiz é o mesmo que contém `index.html` e `vercel.json` (o arquivo já está configurado para servir os assets diretamente, então nenhum rewrite extra é necessário).
-4. Após o deploy inicial, qualquer push para a branch conectada (ex.: `main`) dispara uma nova publicação.
-5. Caso altere `vercel.json`, rode um novo deploy (push para a branch ou use o botão **Redeploy** no painel) para aplicar o ajuste.
+2. Não há build: a Vercel detecta automaticamente que é um site estático e publica todos os arquivos da raiz (HTML, CSS, JS e imagens).
+3. Mantenha o diretório raiz como o próprio repositório (não é necessário `vercel.json`).
+4. Após o deploy inicial, qualquer push para a branch conectada (ex.: `main`) dispara uma nova publicação; use o botão **Redeploy** se quiser forçar manualmente.
 
 ## Publicar no GitHub
 ```powershell
